@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>浪琴 | Longines®</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/md.css">
+    <title>Langines@ 官方网站</title>
+</head>
+<body>
+    <header></header>
+    <div class="head" style="transform: matrix(1,0,0,1,0,0)">
+        <span class="logo11"></span>
+        <span class="separator" style="transform: matrix(1, 0, 0, 1, 0, 0);"></span>
+    </div>
+    <div class="content1">
+            <div class="field">
+                <input id="search"  type="text" name="q" value="" placeholder="搜索" class="input-text" maxlength="128" role="search" aria-haspopup="false" autocomplete="off">
+                <button data-trigger="search"  title="搜索" class="inline btn-search">
+                     <span class="glyphicon glyphicon-search font"></span>
+                </button>
+            </div>
+    </div>
+    <div class="content2">
+        <div class="search-bottom">
+            <div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
+            <div id="search_no_results" class="search-no-results" style="display: none;">搜索无结果</div>
+            <div id="search_popular" class="search-popular">   
+               <p class="upper">您可能感兴趣</p>
+               <ul class="search-terms">
+                  <li class="item">
+                     <a href="search_result.html?q=l2">l2 </a>
+                  </li>
+                  <li class="item">
+                     <a href="search_result.html?q=l2.142.0.70.4"> l2.142.0.70.4 </a>
+                  </li>
+                  <li class="item">
+                      <a href="search_result.html?q=l4">l4</a>
+                  </li>
+                  <li class="item" >
+                      <a href="ditu.html" class="retailers"><span class="glyphicon glyphicon-map-marker">&nbsp</span>零售店</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="js/jquery-1.11.3.js"></script>
+  	<script src="js/bootstrap.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>	
+    <script>
+        //按表的编号查找
+        $(()=>{
+          $(document.body).on("click","[data-trigger=search]",function(){
+              var $txtSearch=$(this).parent().children("input").val().trim();
+              if($txtSearch!==""){
+                window.location.href="search_result.html?q="+$txtSearch;
+              }else location="search.html";
+          });
+          $(document).on("keyup","#search",e=>{
+            if(e.keyCode==13){
+                $(e.target).next().click();
+            }
+          });
+        
+    })
+
+    </script>
+</body>
+</html>

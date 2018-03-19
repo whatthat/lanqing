@@ -1,0 +1,342 @@
+        /**设置通用样式**/
+        html{font-size:62.5%;}
+        *{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        *:before,*:after{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,p,input,button,textarea,img,th,td,span{
+            margin:0;
+            padding:0;
+        }
+        body{      
+            color:#fff;
+            background: #003150;
+            text-align: center;
+        }
+        a{
+            text-decoration:none;
+        }
+
+        ul,ol,li{
+            list-style:none;
+        }
+        .clearfix{
+            display:table;
+            content:"";
+            clear:both;
+            overflow:hidden;
+        }
+
+        /*****banner图****/
+        .banner{
+            width:100%;
+            height:610px;
+            overflow:hidden;
+            position:relative;
+            top:110px;
+        }
+        .banner ul.bannerImg{
+             width:500%;
+             position:absolute; left:0;
+             top:-30%
+        }
+     
+        .banner ul.bannerImg>li{float:left;width:20%;}
+        .banner ul.bannerImg img{
+            width:100%;
+            height:auto;
+        }
+        .btns{
+            cursor:pointer;
+            z-index: 99;
+            font-size: 3rem;
+            width:3.3rem;
+            color:#fff;
+            border:1px solid #fff;
+        }
+        .btns#next{    
+            position:absolute;
+            bottom:50%;right:5%;   
+        }
+        .btns#previous{
+            position:absolute;
+            bottom:50%;left:5%;
+        }
+        /**楼层1**/
+        .section1{
+            width:96%;
+            text-align:center;
+        }
+        .section1>h1,.section1>h2{
+            margin:50px;
+            font-weight:normal;
+            text-align: left;
+            color:#fff;
+        }
+        .section1>h2 a{
+            color:#fff;
+        }
+        .section1>.hotWatch{
+            width:100%;
+            height:575px;
+            color:#000;
+            margin:0 20px;
+            display: flex;
+        } 
+        .section1>.hotWatch>.recomm1{
+            background:#fff;
+            position:relative;
+            text-align:center;
+            width:33%;
+            flex-wrap: wrap;
+            border:4px solid #fff;
+        }
+        .section1>.hotWatch>.recomm1:hover{
+            border:4px solid #84888B;
+        }
+        .section1>.hotWatch img{
+            width:80%;
+        }
+        .section1>.hotWatch>.recomm1>h4{
+            color:#84888B;
+            font-size:1.5rem;
+            font-weight: normal;
+        }
+         .section1>.hotWatch>.recomm1>h3{
+            margin:20px 0;
+            font-weight: normal;
+            font-size:1.7rem;
+         }
+         .section1>.hotWatch>.recomm1>h3 a{
+            color:#003150;
+        }
+        .section1>.hotWatch>.recomm1 div{
+            flex:left;
+        }
+        /**楼层2***/
+        .section2{
+            text-align: center;
+            width:96%;
+            margin:0 20px;
+            display:flex;
+            font-size:3rem;
+        }
+        .section2>.toShop{
+            width:50%;
+            height:300px;
+            background:url("../img/toShop.jpg");
+            padding:100px 0;
+            opacity:0.7;
+            background-size: 100%;   
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+        }
+        .section2>.toShop>div>a{
+            color:#fff;
+        }
+        .section2>.toSales>div>a{
+            color:#fff;
+        }
+        .section2>.toSales{
+            width:50%;
+            height:300px;
+            background:url("../img/toSales.jpg");
+            padding:150px 0;
+            opacity:0.7;
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+        }
+        .section2>.toShop:hover{ 
+            background-size: 105%;
+            opacity:1;
+        }
+        .section2>.toSales:hover{
+            background-size: 105%;
+            opacity:1   ;
+        }
+        /**楼层3**/
+        .section3{          
+            text-align:center;
+            width:95%;
+            margin:0 auto;
+        }
+        .section3>h1,.section3>h2{
+            margin:50px;
+            font-weight:normal;
+            text-align: left;
+            color:#fff;
+        }
+        .section3>h2 a{
+            color:#fff;
+        }
+        .section3>.news{
+            widows:100%;
+            height:630px;
+            color:#000;
+            margin:0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            background: #003150;          
+        } 
+        .section3>.news>.news2{
+            position:relative;
+            text-align:left;
+            width:33%;
+              
+        }
+        .section3>.news .title2{
+            width:100%;
+            height:50%;
+            background:#003150;
+            opacity: 0.3;   
+        }
+        .section3>.news .title2:hover{
+            opacity: 1; 
+        }
+        .news>.news2 img{
+            width:100%;
+            height:100%;   
+        }
+        .section3>.news>.news2>div.title1{
+            width:100%;
+            height:50%;
+            background:#fff;  
+            font-size:2em;     
+        }
+        .section3>.news>.news2>.title1 h6{
+            padding:2em 2em 0.5em 2em;    
+            text-align: left;
+            color:#84888B
+        }
+        .section3>.news>.news2>.title1 span{ 
+            display: inline-block;
+            padding: 0 1.5em; 
+            text-align:left;
+            color:#000; 
+        }
+        .section3>.news>.news2>.title1 h7{
+            text-align: left;
+            color:#84888B;
+            font-size: 0.5em;
+            position:absolute;
+            bottom:20%;
+            left:10%;
+        }
+        /*广告图*/
+         .section4{
+            margin:0 auto;
+            width:95%;
+            height:800px;
+            position:relative;
+            display: flex;
+            background:#000;
+        }
+        .ad{
+            width:66.66%;
+            height:773px;
+            overflow:hidden;
+            position:relative;
+            
+        }
+        .ad ul.ul2{
+             width:400%;
+             position:absolute; left:0;
+        }
+        .ad ul.ul2>li{float:left;width:25%;}
+        .ad ul.ul2 img{
+            width:100%;
+            height:774px;
+        }  
+        .btns2{
+            cursor:pointer;
+            z-index: 99;
+            font-size: 3rem;
+            width:3.3rem;
+            color:#fff;
+            border:1px solid #fff;
+        }
+        .btns2#next2{    
+            position:absolute;
+            bottom:50%;right:45%;  
+             
+        }
+        .btns2#previous2{
+            position:absolute;
+            bottom:50%;left:10%;
+        }
+        .adWatch{
+            width:33.3%;
+            background:#fff;
+            color:#84888B;
+            font-size:1.5rem;
+            cursor: pointer;
+        }
+        .adWatch img{
+            width:80%;
+            height:auto;
+        }
+        .adWatch>h3{
+            padding-top:2rem;
+        }
+        .section4 ul.indicators{
+            position:absolute;
+            bottom:50px;
+            left:50%;
+        }
+        .section4 ul.indicators li{
+            width:12px;
+            height:12px;
+            background:#84888B;
+            border-radius:50%;
+            float:left;
+            margin-right:5px;
+            transition:all .2s linear;
+        }
+        .section4 ul.indicators li.hover{
+            cursor:pointer;
+            background-color:#fff;
+        }
+        .hover{
+            background:#fff;
+        }
+        .adWatch>h3>a{
+            color:#003150;
+        }
+       
+ /***超大屏幕下的样式***/
+        @media screen and (min-width:1600px){
+            .banner{
+                margin:0 auto;
+                width:1600px;
+                height:610px;
+                overflow:hidden;
+                position:relative;
+            }
+    
+            .banner ul.bannerImg{  
+                 width:500%;
+                 position:absolute; 
+                 left:0;
+                 top:-35%
+            } 
+            .section1,.section2,.section3,.section4{
+                width:1550px;
+                margin:0 auto;
+                /* margin:110px; */
+            }
+            .section1 h1{
+                margin-top:160px;
+            }
+            .section2>.toShop>div>a{
+                color:#fff;
+            }
+            .section2>.toSales>div>a{
+                color:#fff;
+            }
+            }

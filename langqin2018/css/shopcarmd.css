@@ -1,0 +1,206 @@
+.box{color:#003150;}
+.titleoff{
+    display: block;
+}
+.titleon{
+    display: none;
+}
+.bing-listcontent{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width:100%;
+    padding-right: 5%;
+    color:#84888b;
+    border:none;
+}
+.bing-content{
+    width:60%;
+    height: 130px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:stretch;
+}
+.content-numb{
+    width: 60%;
+    display: flex;
+}
+
+.bing-shopcartcentent{
+    background-color:#fff;
+    border-bottom:3px solid #f7f7f7;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 5%;
+    margin: 0;
+    align-items:center;
+    border-bottom:1px solid #e6eaed;
+}
+.wasize{
+        display: flex;
+        width:100px;
+}
+.yichu2{
+    display: block;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 20px;
+    border-top: 1px solid #e6eaed;
+    background-color:#fff;
+}
+.yichu2 p{
+    float: right;
+    color: #84888b;
+}
+/* 最里面的自适应布局开始 */
+.content-title{
+    width: 100%;
+}
+.content-select{}
+.price{
+    margin-right: 10%;
+    height: 0;
+    padding-top:2%;
+}
+.price-numb{
+    color:#003150;
+    font-weight: 600;
+}
+.count{
+    margin-right: 10%;
+    height: 0;
+    padding-top:2%;
+}
+.count-numb{
+    font-weight: 600;
+    color:#003150;
+}
+
+/* 最里面的自适应布局结束 */
+.sijin2{
+    margin-top: 15%;
+    margin-bottom: 20px;
+}
+.zengsong{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width:100%;
+    padding-right: 5%;
+    color:#84888b;
+}
+.bing-shopcartcentent>div:last-child>div>div{
+    margin: 0;
+    color: #84888b;
+}
+.footerpay-l{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    letter-spacing:.2em;
+    font-size: 1.5em;
+    font-weight: 600;
+ }
+ .footerpay-r{
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 20px;
+    background: #003150;
+    border: 1px solid #003150;
+    color: #fff;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.zhekoumabigbox{
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.settle-pay{
+    float: right;
+    align-self: flex-start;
+    margin-top: 20px;
+    width: 266px;
+    height: 60px;
+    background: #003150;
+    border: 1px solid #003150;
+    color: #fff;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.zhekoumabox{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    border: 1px solid yellow;
+    justify-content: flex-start;
+    align-items:flex-end;
+}
+.zhekouma{
+    display: flex;
+    width: 80%;
+    margin-right:5%;
+    flex-direction:column;
+}
+.zhekouma>input{
+    width: 100%;
+    border: 1px solid orange;
+    margin-right: 15px;
+}
+.rebatePut{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.settle{
+    width:80px;
+    height: 50px; 
+    background: #003150;
+    border: 1px solid #003150;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+}
+.selectbox{
+    width: 80px;
+    height: 100%;
+    min-width: 40px;
+    min-height: 40px;
+    min-height: 50px;
+    max-height: 100px;
+}
+.content-watchSize{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin-left: 5px;
+}
+.shopcarshow-content-left-select{
+    border:1px solid #84888b;
+    outline: none;
+    border-radius:0;
+    width: 100%;
+    height: 100%;
+    min-height: 40px;
+    max-height: 80px;
+/* 将默认的select框清除/ */
+    /* appearance:none;/ */
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    padding-left: 5%;
+/* 在最右侧显示小箭头 */
+    background:url(../arrow-select.png)no-repeat 90% center;
+}
+.xdelete{
+    display: none;
+}

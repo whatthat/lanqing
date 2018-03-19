@@ -1,0 +1,341 @@
+       /***小屏幕下样式设置***/
+      /**设置通用样式**/
+        html{font-size:62.5%;}
+        *{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        *:before,*:after{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,p,input,button,textarea,img,th,td,span{
+            margin:0;
+            padding:0;
+        }
+        body{      
+            color:#fff;
+            background: #003150;
+            text-align: center;
+        }
+        a{
+            text-decoration:none;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        ul,ol,li{
+            list-style:none;
+        }
+        .clearfix{
+            display:block;
+            content:"";
+            clear:both;
+        }
+
+        /*****banner图****/
+        .banner{
+            width:100%;
+            height:500px;
+            overflow:hidden;
+            position:relative;
+            top:60px;
+        }
+        .banner ul.bannerImg{
+             width:500%;
+             position:absolute; left:0;
+             top:-20%;
+             height:500px;
+        }
+     
+        .banner ul.bannerImg>li{float:left;width:20%;}
+        .banner ul.bannerImg img{
+            width:100%;
+            height:500px;
+        }
+        .btns{
+            cursor:pointer;
+            z-index:99;
+            font-size: 2rem;
+            width:2.3rem;
+            color:#fff;
+            border:1px solid #fff;
+        }
+        .btns#next{    
+            position:absolute;
+            bottom:60%;right:5%;   
+        }
+        .btns#previous{
+            position:absolute;
+            bottom:60%;left:5%;
+        }
+        /**楼层1**/
+        .section1{
+            width:96%;
+            text-align:center;
+            height:375px;
+            margin:0 auto;
+            overflow:hidden;
+            position: relative;
+        }
+        .section1>h1,.section1>h2{
+            margin:20px;
+            font-weight:normal;
+            text-align:left;
+            color:#fff;
+        }
+        .section1>h2 a{
+            color:#fff;
+        }
+        .section1>.hotWatch{
+            width:300%;
+            height:375px;
+            color:#000;
+            margin:0 auto;
+            background:#fff;
+            position: relative;left:0;
+            transition: all 0.5s linear;
+        } 
+        .section1>.hotWatch>.recomm1{
+            display: inline;
+            background:#fff;
+            text-align:center;
+            width:33%;
+            border:4px solid #fff;
+            float:left;
+        }
+      
+        .section1>.hotWatch img{
+            width:200px;
+        }
+        .section1>.hotWatch>.recomm1>h4{
+            color:#84888B;
+            font-size:1rem;
+            font-weight: normal;
+        }
+         .section1>.hotWatch>.recomm1>h3{
+            margin:5px 0;
+            font-weight: normal;
+            font-size:1.2rem;
+         }
+         .section1>.hotWatch>.recomm1>h3 a{
+             color:#003150;
+         }
+        .section1>.hotWatch>.recomm1 div{
+            flex:left;
+        }
+        .section1 .circle1{
+            position:absolute;
+            bottom:16%;
+            left:47%;
+        }
+        .section1 .circle1 span{
+            width:8px;
+            height:8px;
+            background:#84888B;
+            border-radius:50%;
+            margin:0 2px;
+            float:left;
+        }
+        .hovercircle{
+            background:#000;
+        }
+
+        /**楼层2***/
+        .section2{
+            text-align: center;
+            width:96%;
+            margin:0 20px;
+            display:flex;
+            flex-wrap: wrap;
+            font-size:3rem;
+        }
+        .section2>.toShop{
+            width:100%;
+            height:150px;
+            background:url("../img/toShop.jpg");
+            padding:50px 0;
+            opacity:0.7;
+            background-size: 100%;   
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+        }
+        .section2>.toSales{
+            width:100%;
+            height:150px;
+            background:url("../img/toSales.jpg");
+            padding:50px 0;
+            opacity:0.7;
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+        }
+        .section2>.toShop:hover{ 
+            background-size: 105%;
+            opacity:1;
+        }
+        .section2>.toSales:hover{
+            background-size: 105%;
+            opacity:1   ;
+        }
+        .section2>.toShop>div>a{
+            color:#fff;
+        }
+        .section2>.toSales>div>a{
+            color:#fff;
+        }
+        /**楼层3**/
+        .section3{          
+            text-align:center;
+            width:95%;
+            margin:0 auto;
+            height:1800px;
+        }
+        .section3>h1,.section3>h2{
+            margin:50px;
+            font-weight:normal;
+            text-align: left;
+            color:#fff;
+        }
+        .section3>h2{
+            display: none;
+        }
+        .section3>h2 a{
+            color:#fff;
+        }
+        .section3>.news{
+            width:100%;
+            color:#000;
+            margin:0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            background: #003150;  
+            display: flex; 
+            height:500px;   
+        } 
+        .section3>.news>.news2{
+            position:relative;
+            text-align:left;
+            width:100%;
+            margin:0 auto; 
+              
+        }
+        .section3>.news .title2{
+            width:100%;
+            height:70%;
+            background:#003150;
+            opacity:0.3;   
+        }
+        .section3>.news .title2:hover{
+            opacity:1; 
+        }
+        .news>.news2 img{
+            width:100%;
+            height:350px;   
+        }
+        .section3>.news>.news2>div.title1{
+            width:100%;
+            height:150px;
+            background:#fff;  
+            font-size:2rem;     
+        }
+        .section3>.news>.news2>.title1 h6{
+            padding:2rem 2rem 0.5rem 2rem;    
+            text-align: left;
+            color:#84888B
+        }
+        .section3>.news>.news2>.title1 span{ 
+            display: inline-block;
+            padding: 0 1.5rem; 
+            text-align:left;
+            color:#000; 
+            font-size:1rem;
+        }
+        .section3>.news>.news2>.title1 .h7{
+            display: none;
+        }
+         /***楼层4样式设置***/
+        /*广告图*/
+         .section4{
+            margin:0 auto;
+            width:95%;
+            height:500px;
+            position:relative;
+            display: flex;
+            background:#000;
+            flex-wrap: wrap;
+        }
+        .ad{
+            width:100%;
+            height:50%;
+            overflow:hidden;
+            position:relative;
+            
+        }
+        .ad ul.ul2{
+             width:400%;
+             position:absolute; left:0;top:-30%;
+        }
+        .ad ul.ul2>li{float:left;width:25%;}
+        .ad ul.ul2 img{
+            width:100%;
+            height:50%;
+        
+        }
+        .btns2{
+            cursor:pointer;
+            z-index: 99;
+            font-size: 2rem;
+            width:2.3rem;
+            color:#fff;
+            border:1px solid #fff;
+        }
+        .btns2#next2{    
+            position:absolute;
+            bottom:70%;right:10%;  
+             
+        }
+        .btns2#previous2{
+            position:absolute;
+            bottom:70%;left:10%;
+        }
+        .adWatch{
+            width:100%;
+            background:#fff;
+            color:#84888B;
+            font-size:1rem;
+        }
+        .adWatch img{
+            width:auto;
+            height:25%;
+        }
+        .adWatch>h3{
+            padding-top:1rem;
+        }
+
+        .section4 ul.indicators{
+            position:absolute;
+            bottom:50px;
+            right:10%;
+            bottom:53%;
+        }
+        .section4 ul.indicators li{
+            width:7px;
+            height:7px;
+            background:#84888B;
+            border-radius:50%;
+            float:left;
+            margin-right:5px;
+            transition:all .2s linear;
+        }
+        .section4 ul.indicators li.hover{
+            cursor:pointer;
+            background-color:#fff;
+        }
+        .hover{
+            background:#fff;
+        }
+        .section4 .adWatch a{
+            color:#003150;
+        }

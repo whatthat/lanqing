@@ -1,0 +1,251 @@
+*{
+    -webkit-font-smoothing: antialiased;
+}
+.box{color:#003150;}
+/* 我的购物车样式 */
+.titlelog{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    line-height: 50px;
+}
+.titlelog>div{
+    color:black;
+}
+.titlelog>div>img{
+    height:22px;
+}
+.titlepay{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+    background-color:#003150;
+    color: #fff;
+    font-size: 2rem;
+}
+.titleoff{
+    display: none;
+}
+.titleon{
+    display: block;
+}
+.shopcarbodyer{
+    max-width: 767px;
+    min-width: 400px;
+    margin: auto;
+    width: 100%;
+    background-color: #EFF1F3;
+    overflow: hidden;
+}
+.msbackground-color{
+    background-color: #EFF1F3;
+}
+.mysc{
+    font-weight: 400;
+    font-size: 2em;
+    letter-spacing: .1em;
+    line-height: 1.1;
+} 
+.mycarhead{
+    margin: 0;
+    max-width: 767px;
+    min-width: 400px;
+    background-color: #fff;
+   box-sizing: border-box;
+    padding:0 0 10px 0;
+    margin: 0 auto;
+}
+.shopcarbodyer-lg{
+    max-width: 767px;
+    min-width: 400px;
+    margin: 0 auto;
+    padding-top: 0;
+    background-color: #EFF1F3;
+}
+.numbwatch{
+    margin: 0;
+    padding: 0;
+    font-weight:400;
+    font-size: 1.2em;
+    display: inline-block;
+}
+.numbwatch-p{
+   display: inline-block;
+    padding: 0;
+    color: #84888b;
+    font-size: 1em;
+}
+/* 购物列表样式 */
+.bing-listcontent{
+    padding-top: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-bottom:none;
+    color:#84888b;
+    justify-content:center;
+    align-self:center;
+}
+/* 最里面的自适应布局开始 */
+.sijin{
+    display: none;
+}
+.sijin2{
+    margin-top: 30%;
+}
+.content-select span{
+    margin: 0;
+    padding-bottom: 1%;
+}
+.content-select{
+    margin-top:3%;
+}
+
+.content-numb{
+    display: flex;
+}
+.price{
+    margin-right: 10%;
+    height: 0;
+    padding-top:2%;
+}
+.price-numb{
+    color:#003150;
+    font-weight: 600;
+}
+.count{
+    margin-right: 10%;
+    height: 0;
+    padding-top:2%;
+}
+.count-numb{
+    font-weight: 600;
+    color:#003150;
+}
+.yichu2{
+    display: none;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 20px;
+    border-top: 1px solid #e6eaed;
+}
+.yichu2 p{
+    float: right;
+    color: #84888b;
+}
+/* 移动的购物车开始 */
+.cartblock{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.blockdown{
+    display: none;
+}
+.cartblock-box{
+    max-width: 767px;
+    min-width: 400px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cartblock-shop{
+    text-align: center;
+    width: 48%;
+    color: #003150;
+    border: 1px solid #c7ccd0;
+    background-color: #fff;
+}
+.cartblock-shop:hover{
+    color: #fff;
+    border:1px solid #003150;
+    background-color:#003150;
+}
+.cartblock-pay{
+    text-align: center;
+    width: 48%;
+    color: #fff;
+    border:1px solid #003150;
+    background-color:#003150;
+}
+.cartblock-pay>a{
+    text-decoration: none;
+    color: #fff;
+}
+.cartblock-pay:hover{
+    border:1px solid #003150;
+    background-color:#fff;
+    color: #003150;
+}
+.footerpay{
+    margin: 0 auto;
+    border: 1px solid #e6eaed;
+    width:100%;
+    height:72px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e6eaed;
+    align-items:center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footerpay-l{
+    width: 50%;
+    height: 47px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    letter-spacing:.2em;
+    font-size: 1.2rem;
+    font-weight: 700;
+ }
+ .footerpay-r{
+    width: 50%;
+    height: 47px;
+    font-size: 0.8em;
+    padding-left: 30px;
+    padding-right: 20px;
+    background: #003150;
+    border: 1px solid #003150;
+    color: #fff;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.orderh4{
+    margin-top: 50px;
+    font-size: .5rem;
+    line-height: 28px;
+    font-weight: 400;
+    color: #84888b;
+    letter-spacing: 2px;
+}
+.order{
+    font-size: 1.8rem;
+    line-height: 28px;
+    font-weight: 600;
+    color: #84888b;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.diamonds-r{
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+}
+.xshind{
+    display:none;
+}

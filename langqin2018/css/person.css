@@ -1,0 +1,124 @@
+div.lHr{
+    width:100%;
+    margin-top:110px;
+}
+/*1.������ҳ*/
+div.lHr>div.lHrList{
+    width:100%;
+    height:58px;
+    line-height:56px;
+    border-bottom:1px solid #EFF1F3;
+    background:#fff;
+}
+div.lHrList>ul{
+    float:left;
+    margin-left:95px;
+}
+div.lHrList>ul>li{
+    float:left;
+    color: #737373;
+    font-size: 13px;
+}
+/*2.������Դ*/
+div.lHr>div.lHrTitle{
+    width:100%;
+    height:171px;
+    /*border:1px solid #000000;*/
+    line-height: 171px;
+}
+div.lHrTitle>h1{
+    padding-left:95px;
+    font-size: 70px;
+    color: #002442;
+    height: 170px;
+    font-weight: normal;
+    background:#fff;
+}
+/*3.������˭*/
+div.lHr>div.lHrPhoto{
+    width:100%;
+    height:360px;
+    /*border:1px solid #000000;*/
+    background-color:#EFF1F3;
+    text-align:center;
+}
+div.lHrPhoto>ul{
+    display: flex;
+    padding:60px 0;
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+div.lHrPhoto>ul li{
+    height:250px;
+    display: inline-block;
+}
+div.lHrPhoto>ul li:first-child{
+    background-color:#E2E6EA;
+}
+div.lHrPhoto>ul li h3{
+    font-weight: normal;
+    color:#000000;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+/*4.������˭����*/
+div.lHr>div.lHrDetails{
+    width:100%;
+    height:946px;
+    /*border:1px solid #000000;*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+div.lHrDetails>div.lHrDePh{
+    width:50%;
+    height:946px;
+    background:#fff;
+}
+div.lHrDePh>img{
+    width:100%;
+}
+div.lHrDetails>div.lHrDeTi{
+    width:50%;
+    height:946px;
+    background:#fff;
+    /*border:1px solid #000000;*/
+}
+div.lHrDeTi>div.lHrDeTe{
+    width:70%;
+    height:800px;
+    margin:0 auto;
+    /*border:1px solid #000000;*/
+}
+div.lHrDeTe h1{
+    font-weight:normal;
+    color: #5d646a;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+div.lHrDeTe p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #5d646a;
+}
+/*5.ȫ��ְҵ��չ��ͼ*/
+div.lHr>div.lHrMap{
+    width:100%;
+    height:575px;
+    display: flex;
+    /*border:1px solid #000000;*/
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color:#E2E6EA;
+}
+div.lHrMap div{
+    width:50%;
+    /*border:1px solid #000000;*/
+    text-align:center;
+    margin-top: 80px;
+}

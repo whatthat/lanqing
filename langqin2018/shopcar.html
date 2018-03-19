@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浪琴 | Longines®</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<mata name=“viewport” content=“width=device-width,initial-scale=1”></mata>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" media="(min-width:1200px)" href="css/shopcarlg.css">
+	<link rel="stylesheet" media="(max-width:1199px) and (min-width:768px)" href="css/shopcarmd.css">
+	<link rel="stylesheet" media="(max-width:767px)" href="css/shopcarsm.css">
+	<link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/md.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/shopcar.js"></script>
+</head>
+<body >
+<header></header>
+	<section class="box" style="margin:110px auto" >
+			<!-- 购物车页面头部 -->
+			<div class="container-fluid">
+				<div class="row mycarhead">
+					<div class=" col-xs-12 col-sm-8 col-md-6 ">
+						<h1 class="mysc">我的购物车</h1>
+						<div class="mysc1">安全购物保障</div>
+					</div>
+					<div class="hidden-xs col-sm-4 col-md-6">
+						<div class="row moveright">
+								<!-- col-md-offset-1 -->
+							<div class=" col-sm-4 col-md-6 col-sm-offset-3 col-md-offset-0 continueshop" onclick="location.href='index.html'">
+								<p >继续购物</p>
+								<p>---></p>
+							</div>
+							<div class="col-sm-4 col-md-6 col-sm-offset-0 col-md-offset-0 valve headpay">
+								<p>结算支付</p>
+								<p>---></p>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 你的购物车 -->
+			<div class="container-fluid">
+				<div class=" shopcarbodyer addshopcarbodyer ">
+					<div class="row">
+							<!-- 购物详情模块 -->
+						<div class="col-xs-12 col-sm-7 col-md-8" style="margin:0;padding:0">
+							<div class="msbackground-color">
+									<!-- 没有商品的时候 -->
+									<div class="nothing">
+										<div>
+											<table></table>
+											<h1 class="youhavecar ">您的购物车为空</h1>
+											<p class="recommend-span">推荐商品</p>
+										</div>
+										<!-- 购物车推荐显示列表 -->
+										<div class="row" > 
+												<div class="col-xs-12 col-sm-6 col-md-6">
+													<!-- <div id="recommend">
+
+													</div> -->
+													<ul class="recommend-ul">
+														<li class="imgL1">
+															<!-- <img src="L4.360.4.12.6md.png" alt="" class="img-responsive"> -->
+														</li>
+														<li>
+															<p>浪琴表律雅系列</p>
+															<p>L4.360.4.12.6</p>
+															<b> ¥10.900.00</b>
+															<div class="putincar"> 
+																加入购物车 
+															</div>
+														</li>
+													</ul>	
+												</div>
+												<div class="col-xs-12 col-sm-6 col-md-6">
+													<ul class="recommend-ul">
+														<li class="imgL2">
+															<!-- <img src="L3.741.4.96.6md.png" alt="" class="img-responsive"> -->
+														</li>
+														<li>
+															<p>康卡斯潜水系列</p>
+															<p>L2.128.4.78.3</p>
+															<b> ¥9.600.00</b>
+															<div class="putincar"> 加入购物车 </div>
+														</li>
+													</ul>	
+												</div>
+										</div>
+									</div>
+									<!-- 有商品的时候 -->
+									<div  class="valve">
+										<!-- 购物商品数量显示 -->
+										<h3 class="numbwatch ">1 腕表</h3>
+										<p class="numbwatch-p">在我的购物车中</p>
+											<div class="container-fluid" id="tianjialiebiao">
+											<div class="list"></div>
+											</div>
+											<div class="row" style="margin:0">
+													<div class=" col-xs-12 col-sm-12 col-md-12 liwujiyuselect">
+														<p class="diamonds " onclick="clackliwujihui(this)"></p>
+														<p class="diamonds-r addlefm">礼物寄语(可选)</p>
+													</div>
+													<div class="col-xs-12 col-sm-12 col-md-12 mybtn">				
+															<div class="row" >
+																<div class="col-xs-6 col-sm-6 col-md-6">
+																	<label for="gift1" >
+																		<span >至</span>
+																	</label>
+																	<div class="giftcontrol">
+																		<input type="text" id="gift1" class="gift-input">
+																	</div>
+																</div>
+																<div class="col-xs-6 col-sm-6 col-md-6" >
+																	<label for="gift2" >
+																		<span>来自</span>
+																	</label>
+																	<div class="giftcontrol">
+																		<input type="text" id="gift2" class="gift-input">
+																	</div>
+																</div>
+																<div  class="col-xs-12 col-sm-12 col-md-12" >
+																	<label for="gift3" >
+																		<span >赠言内容</span>
+																	</label>
+																	<div>
+																		<textarea id="gift3" class="gift-input-text" ></textarea>
+																	</div>
+																</div>
+															</div>
+															<div class="row" style="margin:0">
+																	<div class="preview col-xs-6 col-sm-6 col-md-6" >预览</div>
+																	<div class="update col-xs-6 col-sm-6 col-md-6" >更新</div>
+															</div>
+															<div class="row" >
+																<div class="col-xs-12 col-sm-12 col-md-12">
+																	<p class="table-gift-foot-p">如您需要更多寄语卡片，请致电我们: <a class="inline-phone-btn" href="tel:4008213270">400-821-3270</a></p>
+																</div>
+															</div>
+													</div>
+													<!-- 折扣码 -->
+													<div class="box-settle col-xs-12 col-sm-12 col-md-12">
+														<div class="zhekoumabigbox">
+															<div class="zhekoumabox ">
+																<div class="zhekoumabox" style="margin:0;padding:0">
+																	<div class="zhekouma">
+																		<label for="coupon_code">有折扣码？请在此输入</label>
+																		<input type="text" class="rebatePut" id="coupon_code">
+																	</div>
+																	<div class="settle  ">加入</div>
+																</div>
+															</div>	
+															<div class="xshind">
+																	<div class="settle-pay">
+																			<p>结算支付</p><p>---></p>
+																	</div>
+															</div>
+															
+														</div>
+													</div>		
+												</div>
+									</div>	
+							</div>
+						</div>
+							<!-- 订当详情模块 -->
+						<div class="col-xs-12 col-sm-5 col-md-4 ">
+								
+									<div class="order">订单详情</div>
+									<table class="orderTable" style="overflow:hidden">
+										<tr>
+											<td>小计</td>
+											<td id="orderxiao">¥ 0.00</td>
+										</tr>
+										<tr>
+											<td>配送</td>
+											<td>免费</td>
+										</tr>
+										<tr>
+											<td>总计</td>
+											<td id="orderzong">¥ 0.00</td>
+										</tr>
+									</table>
+								
+									<!-- 保险模块 -->
+									<div class="cart-reinsurance">
+										<h3>免费送货</h3>
+										<p>免费，快速，安全配送</p>
+									
+										<h3>电子发票</h3>
+										<p>浪琴使用电子发票。您可以参阅使用说明，在包裹内获得您的电子发票提取码，然后获取您的电子发票。</p>
+									
+										<h3>帮助</h3>
+											<p><a href="tel:4008213270" style="color:#84888b;">400-821-3270</a></p>
+									
+										<h3>安全付款</h3>
+										<p>支付方式
+										</p>
+										<p>
+											<img  src="https://www.longines.cn/static/version1516604107/frontend/Longines/default/zh_Hans_CN/Magento_Checkout/images/china-union-pay.png" alt="China Union Pay">
+											<img  src="https://www.longines.cn/static/version1516604107/frontend/Longines/default/zh_Hans_CN/Magento_Checkout/images/alipay.png" alt="Ali Pay">
+											<img  src="https://www.longines.cn/static/version1516604107/frontend/Longines/default/zh_Hans_CN/Magento_Checkout/images/wechat-pay.png" alt="Wechat Pay">
+										</p>
+									</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 移动的购物车 -->
+			<div class="cartblock">
+					<div class="cartblock-box">
+							<div class="cartblock-shop" >
+								继续购物 
+							</div>
+							<div class="cartblock-pay" onclick="gotocheckout()">
+								结算支付 	
+							</div>
+					</div>
+			</div>
+	</section>
+	<footer>
+    <img src="img/loading.gif" alt="">
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+<script>
+	
+</script>
+</html>

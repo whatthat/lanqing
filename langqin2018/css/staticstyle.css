@@ -1,0 +1,290 @@
+*{ 
+    margin:0;
+    padding:0;
+}
+.clearfix:after{
+    content:'';
+    height:0;
+    line-height:0;
+    display:block;
+    visibility: hidden;
+    clear:both;
+}
+.clearfix{
+    zoom:1;
+}
+li{
+    list-style:none;
+}
+.AfterSaleBox{
+    margin-top:110px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.static-header{
+    width: 100%;
+    height: 70px;
+    padding-left: 95px;
+    padding-right: 95px;
+    background: #003150;
+    line-height: 70px;
+    border-bottom: 1px solid #26506a;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+.static-header>ul{
+    display: flex;
+    width: 100%;
+    color: #6f8b9d;
+}
+.static-header>ul>li{
+    height: 70px;
+    margin-right: 20px;
+}
+.static-header>ul>li.selected {
+    color: white;
+    border-bottom: 1px solid white;
+}
+/* 隐藏内容 */
+.bodybox{
+    display: none;
+}
+
+/* 用户手册样式 */
+.bg-notebook,.bg-explain,.bg-global{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:90px;
+    color:white;
+    width: 100%;
+    height:580px;
+    background:url(../img/info/xietao1.jpg) no-repeat;
+}
+.notbook-body,.explain-body,.global-body,.guarantee-body{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #eff1f3;
+    color: #6c6d6e;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.explain-body:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.notbook-content,.explain-content,.global-content{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    top: -150px;
+}
+.explain-content:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* footer */
+.notbook-footer-bgimg,.explain-footer-bgimg{
+    width: 100%;
+    height: 230px;
+    background:url(../img/info/background.jpg);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.explain-footer-bgimg:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.footer-bgimg-content,.explain-bgimg-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer-bgimg-content p:last-child,.explain-bgimg-content p:last-child{
+    margin-top:20px;
+    width: 90px;
+    height: 50px;
+    background-color: #fff;
+    color: rgb(0, 49, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ---------------------------------------- */
+.chooselanguage-box{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 40px;
+}
+.chooselanguage-content{
+    height: 50px;
+    width: 100%;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chooselanguage-select{
+    display: block;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    color: #444;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    outline: none;
+    text-align: center;
+    padding-left: 19px;
+}
+.notbook-download{
+    margin: 0 auto;
+    margin-top: 100px;
+    border-top: 1px solid #eff1f3;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 280px;
+}
+.notbook-table{
+    width: 100%;
+}
+.notbook-table tr{
+    width: 100%;
+    border-bottom: 1px solid #eff1f3;
+    height: 60px;
+    line-height: 60px;
+}
+.notbook-table td:nth-child(1){
+    width: 5%;
+    height: 60px;
+    background: url(../img/info/download.png) no-repeat 50% 50%;
+    background-size: 40%;
+}
+.notbook-table td:nth-child(2){
+    width: 80%;
+    padding-left: 2%;
+    text-align: left;
+}
+.notbook-table td:nth-child(3){
+    width: 15%;
+    text-align: right;
+    padding-right: 2%;
+}
+
+/*保养和说明*/
+.explain-content-box{
+    background-color: white;
+    padding: 95px 100px 95px 100px;
+    box-sizing: border-box;
+}
+.explain-content-tier{
+    margin-bottom: 90px
+}
+.explain-content-list{
+    margin-top:5%;
+    height: 95px;
+    width: 100%;
+    display: flex;
+}
+.explain-content-list-img{
+    width: 95px;
+    height: 95px;
+}
+.explain-content-list img{
+    width: 100%;
+}
+.explain-content-list-font{
+    margin-left: 2%;
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+}
+.explain-content-list-font>h5{
+    color: #00304f;
+    font-weight: normal;
+    text-align: left;
+}
+/* 全球保修 */
+.global-content-box{
+    padding: 0px 12% 95px 12%;
+}
+.global-content-font-h3{
+    color: #00304f;
+    padding-top: 87px;
+    padding-bottom: 29px;
+    font-weight: normal;
+}
+.global-content-box p{
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/* 保证和真实性 */
+.bg-guarantee{
+background-color:#003150;
+}
+.guarantee-bodybox{
+    position: relative;
+    top:-520px;
+}
+.guarantee-font{
+    display: flex;
+    align-items: flex-start;
+    color: #fff;
+    margin-left: 50px;
+    flex-direction: column;
+
+}
+.guarantee-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.guarantee-content-img{
+    width: 100%;
+    height: 100%;
+}
+.guarantee-content-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #fff;
+    width:100%;
+    height: 72px;
+    color:#003150;
+}
+/* 服务 */
+.guarantee-font-color{
+    color: #889bac;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 27px;
+}
+.clearpadding{
+    padding-left: 0;
+    padding-right: 0;
+}

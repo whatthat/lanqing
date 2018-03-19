@@ -1,0 +1,54 @@
+﻿/*重写样式*/
+body{
+     color: rgb(0, 49, 80);
+     font-family: "Microsoft Yahei", 微软雅黑, 黑体, Heiti, 华文黑体, "ST Heiti", "Open Sans", "Helvetica Neue", Helvetica,
+     Arial, sans-serif;
+     font-style: normal;
+     font-weight: 400;
+     display: block;
+     line-height: 1.42857;
+     font-size: 1.4rem;
+     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+ p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+   margin:0;
+   padding:0;
+   list-style:none;
+ }
+a{
+  color:#666;
+  text-decoration:none;
+}
+a:hover{
+  color:#0aa1ed;
+}
+
+.clear:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.hiding{
+display:none;
+}
+.vali-info{
+display:block;
+color:red;
+}
+.ok{color:blue}
+.err{color:red}
+#imgCode{
+	cursor:pointer;
+  height:50px;
+  width:150px;
+  padding-left:50px;
+  background-color: #EFF1F3;
+}
+a:hover{
+text-decoration:none;
+}
+ 
+ 
+

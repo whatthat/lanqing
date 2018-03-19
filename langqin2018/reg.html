@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>浪琴 | Longines®</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css"/>
+
+<!--     <link media="screen and (min-width:768px) and (max-width:1199px)" rel="stylesheet" href="css/2_pad.css"> -->
+<!--     <link media="screen and (max-width:767px)" rel="stylesheet" href="css/3_phone.css"> -->
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/1_pc2.css">
+        
+</head>
+<body>
+		<header></header>
+    <div class="L-main">
+        <!--1.上面的手机号注册标题-->
+        <div class="L-title clear">
+            <h2>账户注册使用手机号</h2>
+            <a href="#">
+<!--                 <span>使用电子邮箱注册</span> -->
+            </a>
+        </div>
+        <p style="clear: both"></p>
+        <!--2.下面两个div-->
+        <div class="L-content clear">
+            <!--2.1.左注册:手机号注册-->
+            <div class="L-reg">
+                <form action=".php">
+                  <div class="L-name">
+                    <span>* 姓 名</span>
+										<br>
+                    <input type="text" name="uname" class="uname"/>
+										<div class="hiding">用户名长度必须大于2并且只能包括中文、字母、数字及下划线!</div>
+										<span id="uname-msg"></span>
+                  </div>
+                  <div class="L-sex">
+                    <span>* 性 别</span><br>
+                    <select name="usex" class="usex">
+											<option value="男">男</option>
+											<option value="女">女</option>
+											<option value="不公开">不公开</option>
+                    </select>
+                  </div>
+                  <div class="L-phone">
+                      <span>* 手 机</span><br/>
+                      <input type="text" maxlength="12" class="phone" name="phone"/>
+											<div class="hiding">手机号格式不正确!</div>
+                  </div>
+                  <div class="L-code">
+                    <span>* 请输入验证码</span><br/>
+                    <input type="text" id="txtCode" name="txtCode"/>
+										<img id="imgCode" src="data/getCode.php" title="看不清点击换一张" alt="点击换图片">
+                    <br>
+                    <span id="msg"></span>
+                  </div>
+                  <div class="L-pcode">
+                    <span>* 手机验证码</span><br/>
+                    <input type="text" placeholder="任意填写" />
+                    <a href="#">获取验证码</a>
+                  </div>
+                  <div class="L-twoSec">
+                    <div class="L-firstSec">
+                      <span>* 密码</span><br/>
+                      <input type="password" id="upwd" name="lUpwd"/>
+											<div class="hiding">密码长度必须为6-16位!</div>
+<!--                       <p id="upwd-show"></p> -->
+                    </div>
+										<div class="L-checkSec">
+											<span>* 确认密码</span>
+											<br/>
+											<input type="password" name="lUpwd2"/>
+											<div class="hiding">两次密码必须一样且不为空!</div>
+										</div>
+                  </div>
+                
+                  <div class="L-check">
+                    <input type="checkbox" class="L-checkbox"/>
+                    <span>我已阅读并同意</span>
+                    <a href="#">隐私政策</a>
+                  </div>
+                  <div class="L-submit glyphicon">
+                    <input type="button" id="btn" value="提交" disabled="disabled">
+											<span class="glyphicon glyphicon-menu-right"></span>
+                  </div>
+                </form>
+            </div>
+            <!--2.2.右欢迎-->
+            <div class="L-wel">
+                <!--<img src="img/wechat.svg" alt=""/>-->
+                <!--2.2.1欢迎-->
+                <div class="L-rgWel">
+                    <strong>欢迎</strong>
+                    <p>浪琴将为您呈精美时计,非凡品质及服务.</p>
+                </div>
+                <div class="L-userLogin">
+                    <strong>用户登录</strong>
+                    <p>已注册用户</p>
+                </div>
+                <div class="L-rgForm">
+                    <form action="">
+                        <div class="L-email">
+                            <span>手机号码</span>
+                            <input type="text" name="phone2"/>
+														<div class="hiding">手机号格式不正确!</div>
+                        </div>
+                        <div class="L-sec">
+                            <span>密码</span><br>
+                            <input type="password" name="upwd2"/>
+														<div class="hiding">密码长度必须为6-16位!</div>
+														<span id="upwd-msg"></span>
+                            <a href="#">
+                                
+                            </a>
+                        </div>
+                        <div class="L-login glyphicon">
+                            <a href="#" id="btn2">
+                                登录
+                                <span class="glyphicon glyphicon-menu-right"></span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="L-coo">
+                    <strong>使用合作伙伴登录:</strong>
+                    <div class="L-logo">
+                        <div>
+                            <a href="#"></a>
+                        </div>
+                        <div>
+                            <a href="#"></a>
+                        </div>
+                        <div>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+		<footer></footer>
+			
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/reg.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/footer.js"></script>
+</body>
+</html>
